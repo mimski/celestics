@@ -14,4 +14,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Celestics.Persistence\Celestics.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,4 @@
-using Celestics.Persistence.Extensions;
+using Celestics.Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

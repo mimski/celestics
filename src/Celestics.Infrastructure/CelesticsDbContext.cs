@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Celestics.Domain.Entities;
 
-namespace Celestics.Persistence;
+namespace Celestics.Infrastructure;
 
 public class CelesticsDbContext : DbContext
 {

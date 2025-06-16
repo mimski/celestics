@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Celestics.Persistence\Celestics.Persistence.csproj" />
+    <ProjectReference Include="..\Celestics.Infrastructure\Celestics.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

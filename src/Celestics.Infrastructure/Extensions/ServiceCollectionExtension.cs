@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Celestics.Persistence.Extensions;
+namespace Celestics.Infrastructure.Extensions;
 
 public static class ServiceCollectionExtension
 {

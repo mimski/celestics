@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celestics.Domain", "src\Cel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celestics.Application", "src\Celestics.Application\Celestics.Application.csproj", "{4CFAB1C2-BF76-41E3-81B0-0A77AF224D67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celestics.Persistence", "src\Celestics.Persistence\Celestics.Persistence.csproj", "{2D6467DC-6B7F-44EB-AE9B-4B1B9B775D77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celestics.Infrastructure", "src\Celestics.Infrastructure\Celestics.Infrastructure.csproj", "{43ADF780-6153-6E7D-FD6D-7870AEDE9CC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{4CFAB1C2-BF76-41E3-81B0-0A77AF224D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CFAB1C2-BF76-41E3-81B0-0A77AF224D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CFAB1C2-BF76-41E3-81B0-0A77AF224D67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D6467DC-6B7F-44EB-AE9B-4B1B9B775D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D6467DC-6B7F-44EB-AE9B-4B1B9B775D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D6467DC-6B7F-44EB-AE9B-4B1B9B775D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D6467DC-6B7F-44EB-AE9B-4B1B9B775D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43ADF780-6153-6E7D-FD6D-7870AEDE9CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43ADF780-6153-6E7D-FD6D-7870AEDE9CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43ADF780-6153-6E7D-FD6D-7870AEDE9CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43ADF780-6153-6E7D-FD6D-7870AEDE9CC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

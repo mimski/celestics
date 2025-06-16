@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Celestics.Persistence.Configurations;
+namespace Celestics.Infrastructure.Configurations;
 
 public class PartnerConfiguration : IEntityTypeConfiguration<Partner>
 {

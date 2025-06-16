@@ -1,4 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Celestics.Application.Repositories;
+using Celestics.Application.UnitOfWork;
+using Celestics.Infrastructure.Repositories;
+using Celestics.Infrastructure.UnitOfWork;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,6 +14,11 @@ public static class ServiceCollectionExtension
     {
         services.AddDbContext<CelesticsDbContext>(options =>
             options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
+
+        services.AddScoped<IPartnerRepository, PartnerRepository>();
+        services.AddScoped<IMerchantRepository, MerchantRepository>();
+        services.AddScoped<ITransactionRepository, TransactionRepository>();
+        services.AddScoped<IUnitOfWork, EfUnitOfWork>();
 
         return services;
     }

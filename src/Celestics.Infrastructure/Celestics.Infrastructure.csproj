@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Celestics.Application\Celestics.Application.csproj" />
     <ProjectReference Include="..\Celestics.Domain\Celestics.Domain.csproj" />
   </ItemGroup>
 

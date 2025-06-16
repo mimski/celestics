@@ -10,4 +10,8 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Celestics.Domain\Celestics.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

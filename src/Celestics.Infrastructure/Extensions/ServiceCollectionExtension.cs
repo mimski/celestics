@@ -1,6 +1,11 @@
-﻿using Celestics.Application.Repositories;
+﻿using Celestics.Application.Models.Import;
+using Celestics.Application.Repositories;
+using Celestics.Application.Services.Import;
+using Celestics.Application.Services.Parsing;
 using Celestics.Application.UnitOfWork;
+using Celestics.Infrastructure.Parsing;
 using Celestics.Infrastructure.Repositories;
+using Celestics.Infrastructure.Services.Import;
 using Celestics.Infrastructure.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +24,10 @@ public static class ServiceCollectionExtension
         services.AddScoped<IMerchantRepository, MerchantRepository>();
         services.AddScoped<ITransactionRepository, TransactionRepository>();
         services.AddScoped<IUnitOfWork, EfUnitOfWork>();
+
+        services.AddScoped<IFileParser<TransactionImportModel>, XmlTransactionParser>();
+
+        services.AddScoped<ITransactionImportService, TransactionImportService>();
 
         return services;
     }

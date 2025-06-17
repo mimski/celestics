@@ -2,10 +2,12 @@
 using Celestics.Application.Repositories;
 using Celestics.Application.Services.Import;
 using Celestics.Application.Services.Parsing;
+using Celestics.Application.Services.Query;
 using Celestics.Application.UnitOfWork;
 using Celestics.Infrastructure.Parsing;
 using Celestics.Infrastructure.Repositories;
 using Celestics.Infrastructure.Services.Import;
+using Celestics.Infrastructure.Services.Query;
 using Celestics.Infrastructure.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -28,6 +30,9 @@ public static class ServiceCollectionExtension
         services.AddScoped<IFileParser<TransactionImportModel>, XmlTransactionParser>();
 
         services.AddScoped<ITransactionImportService, TransactionImportService>();
+        services.AddScoped<ITransactionQueryService, TransactionQueryService>();
+        services.AddScoped<IPartnerQueryService, PartnerQueryService>();
+        services.AddScoped<IMerchantQueryService, MerchantQueryService>();
 
         return services;
     }
